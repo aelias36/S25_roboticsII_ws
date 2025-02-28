@@ -1,5 +1,5 @@
-# S24_roboticsII
-ROS2 Workspace for S24 RoboticsII
+# S25_roboticsII
+ROS2 Workspace for S25 Robotics II
 
 For robot issues, please refer to [this document](https://www.overleaf.com/read/jckcnqkwytvb#22a42e).
 
