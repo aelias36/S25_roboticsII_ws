@@ -11,7 +11,7 @@ Press the `Fork` on the page and fork the repo to your account. This will create
 On the robot, open a new terminal (via VNC or SSH)
 ```
 cd ~/codes
-git clone https://github.com/YOUR_ACCOUNT/S24_roboticsII_ws.git [team_name]_ws
+git clone https://github.com/YOUR_ACCOUNT/S25_roboticsII_ws.git [team_name]_ws
 ```
 
 ## Building the ROS2 workspace
