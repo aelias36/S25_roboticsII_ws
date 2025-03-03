@@ -44,7 +44,7 @@ Activate ROS2 environment to run ROS software
 
 **Important**: You have to activate ROS2 environment **EVERYTIME** you open a new terminal and run/access the docker container.
 
-The reason you don't need to do this while doing previous mini project is that there's an ROS activation command in `/root/.bashrc` in the docker container. Whenever a terminal is launched, it will exected this bash script once.
+The reason you don't need to do this while doing previous lab assignment is that there's an ROS activation command in `/root/.bashrc` in the docker container. Whenever a terminal is launched, it will exected this bash script once.
 
 **Docker**: Open/access a docker container via a terminal (VNC or SSH)
 ```
