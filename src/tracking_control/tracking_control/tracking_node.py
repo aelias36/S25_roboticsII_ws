@@ -79,8 +79,8 @@ class TrackingNode(Node):
         # Create publisher for the control command
         self.pub_control_cmd = self.create_publisher(Twist, '/track_cmd_vel', 10)
         # Create a subscriber to the detected object pose
-        self.sub_detected_goal_pose = self.create_subscription(PoseStamped, '/goal/detected_color_object_pose', self.detected_goal_pose_callback, 10)
-        self.sub_detected_obs_pose = self.create_subscription(PoseStamped, '/obstacle/detected_color_object_pose', self.detected_obs_pose_callback, 10)
+        self.sub_detected_goal_pose = self.create_subscription(PoseStamped, 'detected_color_object_pose', self.detected_obs_pose_callback, 10)
+        self.sub_detected_obs_pose = self.create_subscription(PoseStamped, 'detected_color_goal_pose', self.detected_goal_pose_callback, 10)
 
         # Create timer, running at 100Hz
         self.timer = self.create_timer(0.01, self.timer_update)

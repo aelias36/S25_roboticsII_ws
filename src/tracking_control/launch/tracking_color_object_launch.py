@@ -14,21 +14,19 @@ def generate_launch_description():
     obj_detection_node = Node(
         package=object_detection_pkg,
         executable='color_obj_detection',
-        namespace='obstacle',
         name='color_obj_detection_node',
         parameters=[
-            {'color_low': [120, 40, 0]},{'color_high': [255, 255, 70]}, {'object_size_min':500}
+            {'color_low': [120, 40, 0]},{'color_high': [255, 255, 70]}, {'object_size_min':200}
         ],
         output="screen"
     )
 
-    obj_detection_node2 = Node(
+    goal_detection_node = Node(
         package=object_detection_pkg,
-        executable='color_obj_detection',
-        namespace='goal',
-        name='color_obj_detection_node',
+        executable='color_goal_detection',
+        name='color_goal_detection_node',
         parameters=[
-            {'color_low': [0, 0, 120]},{'color_high': [70, 70, 255]}, {'object_size_min':500}
+            {'color_low': [0, 0, 120]},{'color_high': [70, 70, 255]}, {'object_size_min':200}
         ],
         output="screen"
     )
@@ -42,6 +40,6 @@ def generate_launch_description():
     
     return LaunchDescription([
         obj_detection_node,
-        obj_detection_node2,
+        goal_detection_node,
         tracking_control_node
     ])
